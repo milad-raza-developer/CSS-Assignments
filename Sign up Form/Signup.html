@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <style>
+        h1{
+            color: white;
+        }
+        body{
+            background-image: url(./back.jpg);
+            background-repeat: no-repeat;
+            background-size: 1500px;
+            /* background-position: center; */
+            font-family: Arial, Helvetica, sans-serif;
+            
+            /* background-color: black; */
+            padding: 0;
+            margin: 0;
+            
+        }
+        .wrapper{
+            /* background-color: black; */
+            /* opacity: 0.3; */
+            padding: 0;
+            margin: 0;
+            /* text-align: center;
+            vertical-align: center; */
+        }
+        .input_div input{
+            padding: 8px;
+            width: 300px;
+            border: 1px solid transparent;
+            padding-left: 40px;
+            font-size: 15px;
+            outline: none;
+        }
+        .input_div i{
+            position: absolute;
+            left: 20px;
+            top: 5px;
+            padding: 2px 2px 2px 8px;
+            
+        }
+        .input_div{
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .form_div{
+            background-color: rgba(82, 0, 82, 0.699);
+            /* padding: 10px; */
+            /* opacity: 0.5; */
+            /* display: inline;     */
+            
+            width: 390px;
+            height: 470px;
+            /* color: white; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding-top: 20px ;
+            text-align: center
+            /* padding: 20px; */
+            /* padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 15%;
+            margin-left: 32%; */
+        }
+        button{
+            margin-top: 10px;
+            width: 130px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(199, 32, 143);
+            border: 1px solid transparent;
+        }
+        .lock{
+            padding: 2px 2px 2px 12px !important;
+            
+        }
+        .h1_div{
+            text-align: center;
+            margin-top: 100px;
+            word-spacing: 10px;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        .para_div{
+            position: absolute;
+            top: 80%;
+            left: 36%;
+            letter-spacing: 0;
+        }
+        p{
+            letter-spacing: 0;
+            word-spacing:0;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        span{
+            color:rgb(199, 32, 143);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="h1_div"> 
+        <h1>FLAT SIGN UP FORM</h1>
+    </div> 
+        <div class="form_div">
+            <form>
+                <h1>SIGN UP</h1>
+                <div class="input_div">
+                    <input type="text" placeholder="First Name"/>
+                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                </div>
+                <div class="input_div">
+                    <input type="text" placeholder="Last Name"/>
+                    <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                </div>
+
+                <div class="input_div">
+                    <input type="number" placeholder="Phone Number"/>
+                    <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+                </div>
+                <div class="input_div">
+                    <input type="email" placeholder="Email"/>
+                    <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                </div>
+                <div class="input_div">
+                    <input type="password" placeholder="password"/>
+                    <i class="fas fa-lock-open" aria-hidden="true" class="lock"></i>
+                </div>
+                <div class="input_div">
+                    <input type="password" placeholder="Confirm password"/>
+                    <i class="fas fa-lock-open" aria-hidden="true" class="lock"></i>
+                </div>
+                <div class="button_div"><button type="submit">SIGN UP</button></div>
+            </form>
+        </div>
+        <div class="para_div"><p>2020 Flat SignUp Form. All rights reserved | <span>Milad Raza</span></p></div>
+    </div>
+</body>
+</html>

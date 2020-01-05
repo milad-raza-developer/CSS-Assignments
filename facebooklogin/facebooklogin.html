@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook</title>
+    <style>
+        table, p, img, h1{
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+        }
+        /* nav{
+            font-size: 12px;
+            height: 78px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav_p_h{
+        display: inline-block;
+
+        font-size: 40px;
+
+        position: relative;
+        bottom: 57px; 
+        padding-left: 30px;
+        font-weight: bold;
+        
+    }
+    nav{
+        display:block;
+        
+
+        background-color: #3578E5;
+        color: white;
+        padding-bottom: 20px;
+
+    }
+    table{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        padding-top: 20px;
+        
+        
+    }
+    .nav_label{
+        font-size: 12px;
+    }
+    .nav_input{
+        width: 142px;
+        font-size: 12px;
+        margin-right: 25px;
+    }
+    .table_div_nav{
+        display: inline-block;
+        float: right;
+        padding-right: 100px ;
+    }
+    #keep_log{
+        position: relative;
+        bottom: 3px;
+    }
+    .nav_button{
+        background-color: rgb(18, 94, 216);
+        color: white;
+        border: 1px solid white;
+        padding: 3px;
+        width: 60px;
+    }
+    .content_div{
+        display: inline-block;
+    }
+    #singnup_div{
+        float: right;
+        margin-right: 18%;
+    }
+
+    .content_input{
+        width: 150px;
+        padding: 4px;
+        border: 2px solid rgb(184, 184, 184);
+        border-radius: 2px 2px 2px 2px;
+        margin-bottom: 4px;
+        
+    }
+    .big_input{
+        width: 315px;
+    } */
+    /* .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #2851A3;
+        color: white;
+        font-size: 12px;
+        min-width: 351;
+        padding: 13px;
+        /* height: 55px; */
+    }
+    .nav_input{
+        width: 142px;
+        margin-right: 10px;
+
+    }
+    /* #nav_table_div{
+        float: right;
+        margin-right: 120px;
+    } */
+    button{
+        color: white;
+        background-color: #3578E5;
+        width: 50px;
+        border: 1px solid black;
+    }
+    #nav_forget{
+        color: rgba(255, 255, 255, 0.644)
+    }
+    #nav_heading a{
+        text-decoration: none;
+    }
+    .nav_heading{
+        font-size: 40px;
+        font-weight: bold;
+        /* position: relative;
+        top: 10px; */
+        margin-left: 11%
+        
+    }
+    .spacer{
+        flex: 0.8;
+    }
+    #nav_table_div{
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    #body_div{
+        display: flex;
+        flex-shrink: inherit;
+        background: linear-gradient( white, rgb(211, 216, 232));
+        height: 615px;
+    }
+    #image_div{
+        margin-left: 10%;
+    }
+    #form_div{
+        /* background: linear-gradient(to bottom, #ffffff 13%, #0066cc 300%); */
+        margin-left: 5%;
+    }
+    #image_para{
+        color: #0e385f;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 8%;
+        line-height: 30px;
+    }
+    .heading_p{
+        font-size: 38px;
+        font-weight: bold;
+        position: relative;
+        bottom: 15px;
+    }
+    .body_para{
+        font-size: 20px;
+        position: relative;
+        bottom: 40px;
+    }
+    .input_div{
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .content_input{
+        font-size: 18px;
+        padding: 8px 10px;
+        border: 1px solid #ccd0d5;
+        border-radius: 5px;
+        margin-bottom: 2.5%;
+        margin-left: 7px;
+        width: 172px;
+    }
+    .big_input{
+        width: 380px;
+    }
+    #label_div{
+        padding-left: 10px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        color: rgb(158, 158, 158);
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #select {
+        border: 1px solid #ccd0d5;
+        font-size: 13px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+    /* margin-bottom: 3%; */
+    }
+    .radio{
+        margin-left: 20px;
+    
+    }
+    .radio_span{
+        color: #1d2129;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+    margin-bottom: 5%;
+    }
+    #small_par{
+        margin-top: 5%;
+        font-size: 11px !important;
+        margin-bottom: 0;
+        color: gray;
+        /* padding-left: 15px; */
+    }
+    #span_para_body{
+        margin-left: 10px;
+    }
+    #body_button{
+        margin-top:7%;
+        padding-left: 3%;
+    }
+    #body_btn{
+        font-size: 19px;
+        font-weight: bold;
+        /* background: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67)); */
+        width: 200px;
+        padding: 7px 20px;
+        text-align: center;
+        background: linear-gradient(#67ae55, #578843);
+        box-shadow: inset 0 1px 1px #a4e388;
+        border-color: #3b6e22 #3b6e22 #2c5115;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        letter-spacing: 1px;
+        text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    }
+    #last_para_div{
+        margin-top: 8%;
+        /* margin-bottom: 1%; */
+        padding-left: 10px;
+        font-size: 13px;
+        color: rgb(80, 80, 80);
+        font-weight: normal;
+        font-family:sans-serif;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+    }
+
+
+</style>
+</head>
+<body>
+    
+        <!-- <nav>
+            <p class="nav_p_h"><br />facebook</p>
+            <div class="table_div_nav">
+                <table>
+                    <tr>
+                        <td><label for="user" class="nav_label">Email or Phone</label></td>
+                        <td><label for="password" class="nav_label">Password</label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="user" id="user" class="nav_input"/></td>
+                        <td><input type="text" name="password" id="password" class="nav_input"/></td>
+                        <td><button type="submit" class="nav_button">Login</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" /><span id="keep_log"> Keep me Log In</span></td>
+                        <td>Forgotten Your Password?</td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+        <div class="content_div">
+
+
+        </div>
+        <div class="content_div" id="singnup_div">
+            <h1>Create an account</h1>
+            <p>It's Free and always will be.</p>
+            <input type="text" placeholder="First Name" class="content_input"/>
+            <input type="text" placeholder="Last Name" class="content_input"/><br />
+            <input type="email" class="content_input big_input" /><br />
+            <input type="email" class="content_input big_input" /><br />
+            <input type="password" class="content_input big_input"/><br />
+            <input type="date" class="content_input big_input"/><br />
+            <input type="radio"/>Male
+            <input type="radio"/>Female
+            
+        </div>  -->
+        <header id="header">
+        <nav>
+
+            
+            <div class="nav_heading"><a>facebook</a></div>
+            <div class="spacer"></div>
+            <div id="nav_table_div">
+                <table id="nav_table">
+                    <tr class="nav_tr">
+                        <td class="nav_td"><label for="user">Email or Phone</label></td>
+                        <td class="nav_td"><label for="password">Password</label></td>
+                        <td class="nav_td"></td>
+                    </tr>
+                    <tr class="nav_tr">
+                        <td class="nav_td"><input type="email" class="nav_input"/></td>
+                        <td class="nav_td"><input type="password" class="nav_input"/></td>
+                        <td class="nav_td"><button>Login</button></td>
+                    </tr>
+                    <tr>
+                        <td class="nav_td"></td>
+                        <td class="nav_td" id="nav_forget">Forgotten account?</td>
+                        <td class="nav_td"></td>
+                    </tr>
+                </table>
+            </div>
+        </nav>
+    </header>
+        <div id="body_div"> 
+            
+            <div id="image_div">
+                <p id="image_para">Facebook helps you connect and share with the<br /> people in your life</p>
+                
+            <img src="./faceboofpic2.png"/>
+            </div>
+            <div id="form_div" >
+                <p class="heading_p">Create an account</p>
+                <p class="body_para">It's quick & easy</p>
+                <div class="input_div">
+                    <input type="text" placeholder="First name" class="content_input"/>
+                    <input type="text" placeholder="Surname" class="content_input"/><br />
+                    <input type="email" class="content_input big_input" placeholder="Mobile or email address" /><br />
+                    <input type="password" class="content_input big_input" placeholder="New Password"/><br />
+                    <div id="label_div"><label for="date">Birthday</label></div>
+                    <select id="select">
+                        <option>4</option>
+                    </select>
+                    <select id="select">
+                        <option>Jan</option>
+                    </select>
+                    <select id="select">
+                        <option>1995</option>
+                    </select> <br />
+                    <div id="label_div"><label for="date">Gender</label></div>
+                    <input type="radio" class="radio"/><span class="radio_span">Female</span>
+                    <input type="radio" class="radio"/><span class="radio_span">Male</span>
+                    <input type="radio" class="radio"/><span class="radio_span">Custom</span><br /><br />
+                    <div id="span_para_body">
+                    <span id="small_par">
+                        By clicking Sign Up, you agree to our <a href="/">Terms, Data Policy</a> and <br /><a href="/">Cookie Policy</a>. You may receive SMS notifications from us and <br />can opt out at any time <br />
+                    </span>
+                    </div>
+                    <div id="body_button"> 
+                        <button id="body_btn" onclick="alert()">Sign Up</button>
+                    </div>
+                    <div id="last_para_div">
+                        <p><a href="/">Create a Page </a>for a celebrity, band or business</p>
+                    </div>
+                    
+            </div>
+            </div>
+        </div> 
+
+
+    </div>
+    <script>
+        function alert {
+            var stop = "Please Fill out all Fields"
+            alert (stop)
+            
+            
+            }
+        
+    </script>
+        
+</body>
+</html>

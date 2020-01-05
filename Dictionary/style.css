@@ -1,0 +1,39 @@
+#head_div{
+    text-align: center;
+}
+#main_heading{
+    color: red;
+    font-size: 90px;
+    text-shadow: 1px 1px 0px #000000;
+}
+#link_div{
+    /* font-weight: bold; */
+    font-size: 25px;
+    text-align: center;
+}
+#link_para{
+    text-decoration: none;
+}
+.links{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: blue;
+}
+#defn_div{
+    padding-left: 20px;
+}
+.headings{
+    color: red;
+    text-decoration: underline;
+}
+.df_heading{
+    background-color: rgb(207, 207, 207);
+    color: white;
+    font-weight: bold;
+    text-indent: 15px;
+    font-size: 25px;
+}
+dd{
+    line-height: 27px;
+    font-weight: 500;
+}
